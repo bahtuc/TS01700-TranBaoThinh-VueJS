@@ -27,20 +27,32 @@
                 <div class="modal-body">
                     <!-- bài3 -->
 
-                    <div class="container mt-3">
-                        <ul class="nv nav-tabs" role="tablist">
+
+                    <div class="container mt-4">
+
+
+                        <!--NAV TABS-->
+                        <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-bs-toggle="tab" href="#regiter"> Đăng ký</a>
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#register">
+                                    Đăng ký
+                                </button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " data-bs-toggle="tab" href="#login"> Đăng nhập</a>
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#login">
+                                    Đăng nhập
+                                </button>
                             </li>
-                            <li class="nav-item"></li>
                         </ul>
-                        <div class="tabs-content">
-                            <div id="regiter" class="container tab-pane active"><br>
-                                <form class="p-3 form-bd bg-light">
-                                    <div class="mb-3 ">
+
+                        <!--TAB CONTENT-->
+                        <div class="tab-content border border-top-0 p-4">
+
+                            <!--  TAB DANG KY -->
+                            <div class="tab-pane fade show active" id="register">
+                                <form>
+                                    <h4 class="mb-3"> Form Đăng Ký Thông Tin </h4>
+                                    <div class="mb-3">
                                         <label class="form-label">Họ và Tên</label>
                                         <input type="text" class="form-control" placeholder="Nhập họ và tên">
                                     </div>
@@ -57,16 +69,16 @@
 
                                     <div class="mb-3">
                                         <label class="form-label">Mật Khẩu</label>
-                                        <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                                        <input type="password" class="form-control">
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label">Xác Nhận Mật Khẩu</label>
-                                        <input type="password" class="form-control" placeholder="Xác nhận mật khẩu">
+                                        <input type="password" class="form-control">
                                     </div>
 
                                     <div class="mb-3">
-                                        <label class="form-label">Giới Tính:</label><br>
+                                        <label class="form-label">Giới Tính</label><br>
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="gender">
                                             <label class="form-check-label">Nam</label>
@@ -74,18 +86,6 @@
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="gender">
                                             <label class="form-check-label">Nữ</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label class="form-label">Tình trạng hôn nhân:</label><br>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="marital_status">
-                                            <label class="form-check-label">Chưa kết hôn</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="marital_status">
-                                            <label class="form-check-label">Đã kết hôn</label>
                                         </div>
                                     </div>
 
@@ -100,15 +100,19 @@
                                     <div class="form-check mb-3">
                                         <input class="form-check-input" type="checkbox">
                                         <label class="form-check-label">
-                                            Tôi đồng ý với các điều khoản và điều kiện
+                                            Tôi đồng ý với các điều khoản
                                         </label>
                                     </div>
 
                                     <button class="btn btn-primary">Đăng Ký</button>
                                 </form>
                             </div>
-                            <div id="login" class="container tab-pane fade"><br>
-                                <form class="p-3 form-bd bg-light">
+
+
+                            <!--TAB DANG NHAP-->
+                            <div class="tab-pane fade" id="login">
+                                <form>
+                                    <h4 class="mb-3"> Form Đăng Nhập </h4>
                                     <div class="mb-3">
                                         <label class="form-label">Email</label>
                                         <input type="email" class="form-control" placeholder="Nhập email">
@@ -125,12 +129,13 @@
 
                         </div>
                     </div>
+
                     <!-- /bài3  -->
                 </div>
             </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>
