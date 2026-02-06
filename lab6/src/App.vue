@@ -8,7 +8,11 @@ import bai4 from './components/bai4.vue';
 
 <template>
   <div class="container">
+<<<<<<< HEAD
     <!-- <hr>
+=======
+    <hr>
+>>>>>>> 7439dc84fc91e2500cd1a0705700a06c46189e93
     <h1>bai1</h1>
     <bai1 />
     <hr>
@@ -17,7 +21,11 @@ import bai4 from './components/bai4.vue';
     <hr>
     <h1>Bai 3</h1>
     <bai3 />
+<<<<<<< HEAD
     <hr> -->
+=======
+    <hr>
+>>>>>>> 7439dc84fc91e2500cd1a0705700a06c46189e93
     <h1>Bai 4</h1>
     <bai4 />
   </div>

@@ -1,6 +1,7 @@
 <template>
     <div>
         <h2>Tạo bài viết mới</h2>
+<<<<<<< HEAD
 
         <input v-model="title" placeholder="Tiêu đề" />
         <input v-model="author" placeholder="Tác giả" />
@@ -10,6 +11,14 @@
     </div>
 </template>
 
+=======
+        <input v-model="title" placeholder="Tiêu đề">
+        <input v-model="author" placeholder="Tác giả">
+        <Textarea v-model="content" placeholder="Nội dung"></Textarea>
+        <button @click="submitPost">Đăng bài</button>
+    </div>
+</template>
+>>>>>>> 7439dc84fc91e2500cd1a0705700a06c46189e93
 <script setup>
 import { ref } from 'vue'
 
@@ -20,6 +29,7 @@ const content = ref('')
 const author = ref('')
 
 function submitPost() {
+<<<<<<< HEAD
     if (!title.value || !content.value || !author.value) {
         alert('Vui lòng nhập đầy đủ thông tin')
         return
@@ -29,6 +39,14 @@ function submitPost() {
         title: title.value,
         content: content.value,
         author: author.value
+=======
+    if (title.value && content.value && author.value) {
+        const newPost = {
+            title: title.value,
+            content: content.value,
+            author: author.value
+        }
+>>>>>>> 7439dc84fc91e2500cd1a0705700a06c46189e93
     }
 
     emit('add-post', newPost)
@@ -58,4 +76,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> 7439dc84fc91e2500cd1a0705700a06c46189e93

@@ -8,6 +8,7 @@ import Bai3 from './components/Bai3.vue';
 </script>
 
 <template>
+<<<<<<< HEAD
   <!-- <p>Bài 1</p>
   <Bai1></Bai1>
   <hr>
@@ -17,6 +18,15 @@ import Bai3 from './components/Bai3.vue';
   <p>Bai 3</p>
   <Bai3></Bai3>
   <hr> -->
+=======
+  <p>Bài 1</p>
+  <Bai1></Bai1>
+  <p>Bai 2</p>
+  <Bai2></Bai2>
+  <p>Bai 3</p>
+  <Bai3></Bai3>
+
+>>>>>>> 7439dc84fc91e2500cd1a0705700a06c46189e93
   <div id="app">
     <h1>Ứng dụng Blog nhỏ với Vue.Js</h1>
     <CreatePost @add-post="addPost" />

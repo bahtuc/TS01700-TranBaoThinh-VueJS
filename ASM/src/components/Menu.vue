@@ -27,7 +27,7 @@ const logout = () => {
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <router-link class="navbar-brand" to="/posts">Blog</router-link>
+            <router-link class="navbar-brand" to="/posts">POLY_Blog</router-link>
 
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
